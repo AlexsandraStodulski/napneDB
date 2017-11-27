@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block conteudobody %}
+    <h1>LISTA DE PESSOAS</h1>
+<table>
+    <thead>
+        <tr>
+            <th>CODIGO</th>
+            <th>NOME</th>
+        </tr>
+    </thead>
+    <tbody>
+     {% for pessoa in pessoas %}
+        <tr>
+            <td>{{ pessoa.codigo }}</td>
+            <td>{{ pessoa.nome }}</td>
+        </tr>
+     {% endfor %}
+    </tbody>
+</table>
+
+{% endblock %}

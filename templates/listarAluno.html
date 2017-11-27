@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block conteudobody %}
+    <h1>LISTA DE ALUNOS CADASTRADOS</h1>
+<table>
+    <thead>
+        <tr>
+            <th>CODIGO</th>
+            <th>NOME</th>
+            <th>CURSO</th>
+        </tr>
+    </thead>
+    <tbody>
+     {% for aluno in alunos %}
+        <tr>
+            <td>{{ aluno.codigo }}</td>
+            <td>{{ aluno.nome }}</td>
+        </tr>
+     {% endfor %}
+    </tbody>
+</table>
+
+{% endblock %}

@@ -1,0 +1,21 @@
+{% extends'base.html' %}
+{% block conteudobody %}
+    <h1 xmlns="http://www.w3.org/1999/html">FICHA DE ATENDIMENTO</h1>
+    <form action="/gravaratendimento">
+        profissional:<input name="Profissional">
+        aluno:<input name="Aluno">
+        data:<input name="Data">
+        hora:<input name="Hora">
+        relato:<input name="Relato">
+        acaoArquitetonica:<input name="Ação Arquitetônica">
+        acaoPedagogica:<input name="Ação Pedagogica">
+        acaoAtitudinal:<input name="Ação Atitudinal">
+        acaoTecnologica:<input name="Ação Tecnologica">
+        acaoComunicacional:<input name="Ação Comunicacional">
+        profissionaisEnvol:<input name="profissionais Envolvidos">
+        equipMatApoioDidatPedag:<input name="Equipamentos e Materiais de Apoio Didatico Pedagógico">
+        ativDesenvNapne:<input name="Atividades Desenvolvidas pelo Napne">
+        parceriasNecesDesenvAtiv:<input name="Parcerias Necessárias para o Desenvolvimento de Atividades">
+        <input type="submit" value="ok">
+    </form>
+{% endblock %}

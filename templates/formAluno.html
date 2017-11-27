@@ -1,0 +1,24 @@
+{% extends'base.html' %}
+{% block conteudobody %}
+    <h1 xmlns="http://www.w3.org/1999/html">CADASTRO DE ALUNO</h1>
+    <form action="/gravaraluno">
+     <div class="form-group">
+         <label for="email">Email:
+         </label>
+         <input type="email" class="form-control" id="email"></div>
+        nome:<input name="nome">
+        curso:<input name="Curso">
+
+        cpf:<input name="CPF">
+        rg:<input name="RG">
+        endereco:<input name="Endereço">
+        tefone:<input name="Telefone">
+        profissao:<input name="Profissão">
+
+        turma:<input name="Turma">
+        turno:<input name="Turno">
+        periodo:<input name="Periodo">
+        deficiencia:<input name="Deficiencia">
+        <input type="submit" value="ok">
+    </form>
+{% endblock %}
