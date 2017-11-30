@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block conteudobody %}
+    <h1>LISTA DE PLANO INDIVIDUAL</h1>
+<table class="table">
+    <thead>
+        <tr>
+            <th>COD</th>
+            <th>DEFICIENCIA</th>
+            <th>CURSO</th>
+        </tr>
+    </thead>
+    <tbody>
+     {% for planoindual in planosindividuais %}
+        <tr>
+            <td>{{ planoindual.cod }}</td>
+            <td>{{ planoindual.deficiencia }}</td>
+            <td>{{ planoindual.curso }}</td>
+        </tr>
+     {% endfor %}
+    </tbody>
+</table>
+
+{% endblock %}

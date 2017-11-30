@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block conteudobody %}
+    <h1>LISTA DE ATENDIMENTOS</h1>
+<table class="table">
+    <thead>
+        <tr>
+            <th>DATA</th>
+            <th>HORA</th>
+            <th>RELATO</th>
+        </tr>
+    </thead>
+    <tbody>
+     {% for atendimento in atendimentos %}
+        <tr>
+            <td><strong>{{ atendimento.data }}</strong></td>
+            <td>{{ atendimento.hora }}</td>
+            <td>{{ atendimento.relato }}</td>
+        </tr>
+     {% endfor %}
+    </tbody>
+</table>
+
+{% endblock %}

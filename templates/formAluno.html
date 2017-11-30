@@ -1,24 +1,198 @@
 {% extends'base.html' %}
+{% block conteudohead %}FICHA DE CADASTRO DE ALUNO{% endblock %}
 {% block conteudobody %}
     <h1 xmlns="http://www.w3.org/1999/html">CADASTRO DE ALUNO</h1>
     <form action="/gravaraluno">
-     <div class="form-group">
-         <label for="email">Email:
-         </label>
-         <input type="email" class="form-control" id="email"></div>
-        nome:<input name="nome">
-        curso:<input name="Curso">
 
-        cpf:<input name="CPF">
-        rg:<input name="RG">
-        endereco:<input name="Endereço">
-        tefone:<input name="Telefone">
-        profissao:<input name="Profissão">
 
-        turma:<input name="Turma">
-        turno:<input name="Turno">
-        periodo:<input name="Periodo">
-        deficiencia:<input name="Deficiencia">
+
+    <div class="container">
+
+        <div class="form-group row">
+            <label for="text" class="col-xs-2 col-form-label">Nome do Aluno</label>
+            <div class="col-xs-10">
+                <input name="Nome" type="text" class="form-control" id="text" placeholder="Nome">
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <label for="inputname" class="col-xs-2 col-form-label">Nome do Pai</label>
+            <div class="col-xs-10">
+                <input type="text" class="form-control" id="inputname" placeholder="Nome do pai">
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <label for="name" class="col-xs-2 col-form-label">Nome da Mãe</label>
+            <div class="col-xs-10">
+                <input type="text" class="form-control" id="Name" placeholder="Nome da Mãe">
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <label for="example-email-input" class="col-xs-2 col-form-label">Email</label>
+            <div class="col-xs-10">
+                <input class="form-control" type="email" placeholder="@example.com" id="example-email-input">
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <label for="example-tel-input" class="col-xs-2 col-form-label">Contatos</label>
+            <div class="col-xs-10">
+                <input class="form-control" type="tel" placeholder="(69)9999-5555" id="example-tel-input">
+            </div>
+        </div>
+
+
+        <div class="form-group row">
+            <label for="example-date-input" class="col-xs-2 col-form-label">Date de nascimeento</label>
+            <div class="col-xs-10">
+                <input class="form-control" type="date" value="2011-08-19" id="example-date-input">
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <label for="text" class="col-xs-2 col-form-label">Curso</label>
+            <div class="col-xs-10">
+                <input class="form-control" type="text" placeholder="curso/turno" id="text">
+            </div>
+        </div>
+
+
+        <div class="form-group">
+            <label for="number">N° do Benefício do INSS</label>
+            <input type="number" class="form-control" id="number">
+        </div>
+
+        <div class="form-group">
+            <label for="pwd">CPF:</label>
+            <input name="cpf" type="number" class="form-control" id="pwd">
+        </div>
+
+        <div class="form-group">
+            <label for="number">RG</label>
+            <input type="number" class="form-control" id="number">
+        </div>
+
+
+        <div class="form-group">
+            <label for="exampleFormControlInput1">Laudo Médico</label>
+            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="deficiência Necessaria Especifíca">
+        </div>
+
+
+
+        <div class="form-group">
+            <label for="exampleFormControlTextarea1">Breve relado das informações do laudo:</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+
+        <h4>Acompanhamento Médico: </h4>
+        <h6>faz uso regular de algum medicamento?</h6>
+
+        <div class="form-check form-check-inline">
+            <label class="form-check-label">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1"> sim
+            </label>
+        </div>
+        <div class="form-check form-check-inline">
+            <label class="form-check-label">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2"> não
+            </label>
+        </div>
+
+
+        <h6>Tem acompanhamento médico especializado sistemático?</h6>
+
+        <div class="form-check form-check-inline">
+            <label class="form-check-label">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1"> sim
+            </label>
+        </div>
+        <div class="form-check form-check-inline">
+            <label class="form-check-label">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2"> não
+            </label>
+        </div>
+
+
+
+
+
+        <div class="form-group row">
+            <label for="inputname" class="col-xs-2 col-form-label">Nome do médico Especialista:</label>
+            <div class="col-xs-10">
+                <input type="text" class="form-control" id="inputname" placeholder="">
+            </div>
+        </div>
+
+
+        <div class="form-group row">
+            <label for="name" class="col-xs-2 col-form-label">Especificidade:</label>
+            <div class="col-xs-10">
+                <input type="text" class="form-control" id="Name" placeholder="">
+            </div>
+        </div>
+
+
+
+        <div class="form-group row">
+            <label for="andress" class="col-xs-2 col-form-label">local</label>
+            <div class="col-xs-10">
+                <input class="form-control" type="andress" placeholder="local" id="andress">
+            </div>
+        </div>
+
+
+        <div class="form-group row">
+            <label for="example-date-input" class="col-xs-2 col-form-label">Início do Tratamento</label>
+            <div class="col-xs-10">
+                <input class="form-control" type="date" value="2011-08-19" id="example-date-input">
+            </div>
+        </div>
+
+
+        <div class="form-group row">
+            <label for="example-date-input" class="col-xs-2 col-form-label">Término do Tratamento</label>
+            <div class="col-xs-10">
+                <input class="form-control" type="date" value="2011-08-19" id="example-date-input">
+            </div>
+        </div>
+
+
+
+        <h4>Atendimento específico:</h4>
+
+        <div class="form-check form-check-inline">
+            <label class="form-check-label">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1"> sim
+            </label>
+        </div>
+        <div class="form-check form-check-inline">
+            <label class="form-check-label">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2"> não
+            </label>
+        </div>
+
+
+
+        <div class="form-group col-md-4">
+            <label for="text">Especifique</label>
+            <select id="text" class="form-control">
+                <option selected>ledor e/ou transcritor</option>
+                <option>Material didático em braille</option>
+                <option>Tradutor Intérprete de línguas de sinais</option>
+                <option>cuidador</option>
+                <option>lupas</option>
+                <option>intérprete repetidor/Oralizador</option>
+                <option>Material didático com texto ampliado</option>
+                <option>Professor de apoio</option>
+                <option>Muleta/bengala</option>
+                <option>Quiar intérprete</option>
+                <option>Outras condições/recursos específico necessário </option>
+            </select>
+        </div>
+
         <input type="submit" value="ok">
     </form>
 {% endblock %}
